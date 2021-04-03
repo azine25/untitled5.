@@ -8,7 +8,6 @@ public class Hospital extends Building implements Printable{
         super(name, height, material, color);
         this.ward = ward;
     }
-
     @Override
     public void print() {
         super.print();

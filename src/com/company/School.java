@@ -8,8 +8,6 @@ public class School extends Building implements Printable {
         super(name, height, material, color);
         this.numberClass = numberClass;
     }
-
-
     @Override
     public void print() {
         super.print();

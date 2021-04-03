@@ -8,7 +8,6 @@ public class House extends Building implements Printable {
         super(name, height, material, color);
         this.room = room;
     }
-
     @Override
     public void print() {
         super.print();

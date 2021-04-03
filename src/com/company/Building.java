@@ -13,7 +13,6 @@ public class Building implements Printable{
         this.material = material;
         this.color = color;
     }
-
     @Override
     public void print() {
         System.out.println(  getClass().getSimpleName() +

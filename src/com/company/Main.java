@@ -9,24 +9,23 @@ public class Main {
         createObject("Hospital" );
     }
 
-    public static String  createObject(String className){
-        switch (className){
-            case"House":
-                House house = new House("Vila",2,"Bricks","Black",6);
+    public static Building createObject(String className) {
+        switch (className) {
+            case "House":
+                House house = new House("Vila", 2, "Bricks", "Black", 6);
                 house.print();
-                break;
+                return house;
 
-            case"Hospital":
-                Hospital hospital = new Hospital("Gardenwille",7,"Beton","White",30);
+            case "Hospital":
+                Hospital hospital = new Hospital("Gardenwille", 7, "Beton", "White", 30);
                 hospital.print();
-                break;
+                return hospital;
 
-            case"School":
-                School school = new School("№20", 3,"Beton","Blue",50);
+            case "School":
+                School school = new School("№20", 3, "Beton", "Blue", 50);
                 school.print();
-                break;
-
-        }return className;
+                return school;
+        }return null;
     }
 }   /*
 	2)  (Дэдлайн 3.04.2021 23:59) :
